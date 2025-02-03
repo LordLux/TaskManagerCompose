@@ -51,12 +51,14 @@ fun DeleteSwipePreview() {
 	val error1 = MaterialTheme.colorScheme.error
 	val error2 = MaterialTheme.colorScheme.onError
 	val bg = MaterialTheme.colorScheme.background
-	Column {			// Inactive
+	Column {
+		// Inactive
 		Box(Modifier.height(90.dp)) {
 			BgDeleteBox(
 				bgcolor = bg, iconcolor = error1
 			)
-		}			// Active
+		}
+		// Active
 		Box(Modifier.height(90.dp)) {
 			BgDeleteBox(
 				bgcolor = error1, iconcolor = error2
